@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    // Anpassungaus step 1
+    buildfeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -39,6 +43,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    // step 1: Add the library for designing the better layout using dimensions.
+    // START
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    // END
     implementation 'androidx.navigation:navigation-fragment:2.3.5'
     implementation 'androidx.navigation:navigation-ui:2.3.5'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'

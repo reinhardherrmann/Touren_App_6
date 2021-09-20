@@ -1,0 +1,33 @@
+Step 0: Anlegen Projekt ohne Änderungen
+        Quelle: https://www.udemy.com/course/android-jetpack-masterclass/
+
+Step 1: Anpassen der build.gradle files
+        ViewBinding eingerichtet und Bibliothek für bessere Dimensionierung sdp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
