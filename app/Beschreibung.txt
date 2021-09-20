@@ -18,7 +18,11 @@
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-
+Step 1.2    Erstellen einer Animation für SplashScreen
+            Splashscreen soll Fullscreen werden
+            NoActionBar-Theme hinzugefügt und in Manifest zur SplashActivity zugefügt
+            Animation erstellt definitionen mit translate (Bewegung) und alpha (Sichtbarwerden)
+            animationListner eingeführt. Dieser ruft neue Activity auf
 ---------------------------------------------------------------------------------------
 Step 1.1    Einführen Splash-Activity mit Bild und Text
             SplashActivity als Startactivity im Manifest angegeben
