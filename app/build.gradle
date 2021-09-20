@@ -31,7 +31,7 @@ android {
         jvmTarget = '1.8'
     }
     // Anpassungaus step 1
-    buildfeatures{
+    buildFeatures{
         viewBinding true
     }
 }
