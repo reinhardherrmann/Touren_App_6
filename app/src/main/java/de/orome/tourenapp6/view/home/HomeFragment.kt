@@ -1,4 +1,4 @@
-package de.orome.tourenapp6.ui.home
+package de.orome.tourenapp6.view.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import de.orome.tourenapp6.R
+import de.orome.tourenapp6.viewmodel.HomeViewModel
 
 class HomeFragment : Fragment() {
 

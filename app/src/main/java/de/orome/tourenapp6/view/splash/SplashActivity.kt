@@ -1,4 +1,4 @@
-package de.orome.tourenapp6
+package de.orome.tourenapp6.view.splash
 
 import android.content.Intent
 import android.os.Build
@@ -10,6 +10,8 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import de.orome.tourenapp6.view.main.MainActivity
+import de.orome.tourenapp6.R
 import de.orome.tourenapp6.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -32,7 +34,7 @@ class SplashActivity : AppCompatActivity() {
         }
         // Ende Anpassung
         // TextViewanimieren
-        val splashAnimation = AnimationUtils.loadAnimation(this,R.anim.anim_splash)
+        val splashAnimation = AnimationUtils.loadAnimation(this, R.anim.anim_splash)
         splashBinding.tvSplashScreenTitle.animation = splashAnimation
         // Listener einführen, um Animation in der Mitte des Bildschirmes zu halten
         splashAnimation.setAnimationListener(object: Animation.AnimationListener{

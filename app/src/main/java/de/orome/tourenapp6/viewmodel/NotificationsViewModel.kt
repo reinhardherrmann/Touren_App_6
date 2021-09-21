@@ -1,4 +1,4 @@
-package de.orome.tourenapp6.ui.notifications
+package de.orome.tourenapp6.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
