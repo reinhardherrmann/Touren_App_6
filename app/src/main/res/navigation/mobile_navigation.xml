@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="de.orome.tourenapp6.view.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="de.orome.tourenapp6.view.touren.AllTourenFragment"
+        android:label="@string/labelAllTourenFragment"
+        tools:layout="@layout/fragment_all_touren" />
 
     <fragment
         android:id="@+id/navigation_dashboard"

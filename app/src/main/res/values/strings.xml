@@ -11,4 +11,6 @@
     <string name="hint_lagernummer_3_stellig">Lagernummer 3 - stellig</string>
     <string name="lbl_btn_login">Login</string>
     <string name="SplashScreenTitle">Touren App</string>
+    <string name="labelAllTourenFragment">Touren</string>
+    <string name="lbl_neue_tour">Neue Tour</string>
 </resources>
