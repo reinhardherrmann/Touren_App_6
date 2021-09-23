@@ -7,8 +7,10 @@
 
 
 ---------------------------------------------------------------------------------------
-
-
+Kap. 29.1   Designing AddUpdateTourActivity part 1
+            Layout erstellt Theme zugeordnet,
+            Label und mehrere TextInputLayout hinzugefügt
+            Felder sind noch nicht vollständig
 ---------------------------------------------------------------------------------------
 Kap. 22.2   Package view.touren sowie
             AddUpdateTourActivity hinzugefügt
