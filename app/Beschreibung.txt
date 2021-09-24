@@ -1,12 +1,15 @@
 
 
 ---------------------------------------------------------------------------------------
+Kap. 29.3   Designing AddUpdateTourActivity part 3
+            FloatingActionButton erhält OnClickListener mit Toast (vorläufig)
+            Copyright in SplashActivty eingefügt
 
+            DatePickerDialog für Tourdatum
+            TimePickerDialog für TourDauer, Depotzeit vor und nach Tour
 
 ---------------------------------------------------------------------------------------
 Kap. 29.2   Designing AddUpdateTourActivity part 2
-
-
 ---------------------------------------------------------------------------------------
 Kap. 29.1   Designing AddUpdateTourActivity part 1
             Layout erstellt Theme zugeordnet,
