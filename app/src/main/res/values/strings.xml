@@ -19,4 +19,5 @@
     <string name="hint_tourdauer">Tourdauer hh:mm</string>
     <string name="hint_depotzeit_vor_tour">Depotzeit vor Tour</string>
     <string name="hint_depotzeit_nach_tour">Depotzeit nach Tour</string>
+    <string name="lbl_AddUpdateTour_Activity">Tourdaten editieren</string>
 </resources>
