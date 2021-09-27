@@ -11,7 +11,7 @@ import de.orome.tourenapp6.model.database.entities.Tour
 @Database(entities = arrayOf(Tour::class), version = 1, exportSchema = false)
 public abstract class TourenDatabase : RoomDatabase() {
 
-    abstract fun wordDao(): TourDao
+    abstract fun tourDao(): TourDao
 
     companion object {
         // Singleton prevents multiple instances of database opening at the
