@@ -11,7 +11,7 @@ class TourenRepository(private val tourDao: TourDao) {
     // off the main thread.
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
-    suspend fun insert(tour: Tour) {
+    suspend fun insertNewTour(tour: Tour) {
         tourDao.insertInitialTour(tour)
     }
 }
