@@ -10,9 +10,9 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import de.orome.tourenapp6.view.main.MainActivity
 import de.orome.tourenapp6.R
 import de.orome.tourenapp6.databinding.ActivitySplashBinding
+import de.orome.tourenapp6.view.home.HomeActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,10 +43,10 @@ class SplashActivity : AppCompatActivity() {
             }
 
             override fun onAnimationEnd(animation: Animation?) {
-                // eine Sekunde nach Ende der Animation zur StarrtActivity springen
+                // eine Sekunde nach Ende der Animation zur StartActivity springen
                 Handler(Looper.getMainLooper()).postDelayed({
                     startActivity(Intent(this@SplashActivity,
-                    MainActivity::class.java))
+                    HomeActivity::class.java))
                     // Splashscreen endgültig beenden
                     finish()
                 },1000)

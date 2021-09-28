@@ -5,8 +5,7 @@ import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "tbl_touren",
-    indices = arrayOf(Index(value=["tour_nummer","tour_fahrernummer","tour_lagernummer","tour_fahrzeugnummer"], unique = true)))
+@Entity(tableName = "tbl_touren")
 data class Tour(
     @PrimaryKey(autoGenerate = true)
     val tour_id: Int,
