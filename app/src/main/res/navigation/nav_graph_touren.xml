@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph_touren">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_touren"
+    app:startDestination="@id/tourenHomeFragment">
 
+    <fragment
+        android:id="@+id/tourenHomeFragment"
+        android:name="de.orome.tourenapp6.view.touren.TourenHomeFragment"
+        android:label="fragment_touren_home"
+        tools:layout="@layout/fragment_touren_home" >
+        <action
+            android:id="@+id/action_tourenHomeFragment_to_tourenDetailFragment"
+            app:destination="@id/tourenDetailFragment"
+            app:popUpTo="@id/tourenHomeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tourenHomeFragment_to_newTourFragment"
+            app:destination="@id/newTourFragment"
+            app:popUpTo="@id/tourenHomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourenDetailFragment"
+        android:name="de.orome.tourenapp6.view.touren.TourenDetailFragment"
+        android:label="fragment_touren_detail"
+        tools:layout="@layout/fragment_touren_detail" />
+    <fragment
+        android:id="@+id/newTourFragment"
+        android:name="de.orome.tourenapp6.view.touren.NewTourFragment"
+        android:label="fragment_new_tour"
+        tools:layout="@layout/fragment_new_tour" />
 </navigation>
