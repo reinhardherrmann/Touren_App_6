@@ -14,7 +14,7 @@ data class Tour(
     @ColumnInfo(name = "tour_dauer") val tourDauer: String,
     @ColumnInfo(name = "tour_depotzeit_vt") val tourDepotZeit_vt: String,
     @ColumnInfo(name = "tour_depotzeit_nt") val tourDepotZeit_nt: String,
-    @ColumnInfo(name = "tour_standzeit_kunde") val tourStandzeitKunde: String,
+    @ColumnInfo(name = "tour_fahrtzeitnde") val tourFahrtZeit: String,
     @ColumnInfo(name = "tour_fahrernummer") val tourFahrerNummer: String = "0056",
     @ColumnInfo(name = "tour_lagernummer_start") val tourLagerNummerStart: String = "269",
     @ColumnInfo(name = "tour_lagernummer_ende") val tourLagerNummerEnde: String = "269",

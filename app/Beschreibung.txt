@@ -15,14 +15,17 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
+Kap. 50.2   Dialoge zur Datums und Zeitwahl eingeführt
+            Feld Fahrtzeit hinzugefügt
+            Tour.kt um Fahrtzeit ergänzt
 ---------------------------------------------------------------------------------------
 Kap. 50.2   TourenFragments mit ViewBinding ausgerüstet
-            fragment_new_tour gestaltet
+            fragment new tour gestaltet
 ---------------------------------------------------------------------------------------
 Kap. 50.1   Touren Navigation aufbauen
             3 fragments stand 29.09.2021:
             TourenHomeFragment, TourenDetailFragment und NewTourFragment
-            NavGraph nav_graph_touren erstellt
+            NavGraph nav graph touren erstellt
 ---------------------------------------------------------------------------------------
 Kap. 50.0   Neustrukturierung der GUI
             alle Fragments und Activities gelöscht bis auf HomeActivity und
