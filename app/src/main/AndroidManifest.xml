@@ -10,17 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TourenApp6">
+        <activity android:name=".NewTourActivity"></activity>
         <activity
             android:name=".view.touren.TourenActivity"
-            android:label="@string/title_activity_touren"></activity>
-        <activity android:name=".view.home.HomeActivity" />
-        <activity
-            android:name=".TourenActivity"
             android:label="@string/title_activity_touren" />
-        <activity
-            android:name=".view.touren.AddUpdateTourActivity"
-            android:label="@string/lbl_AddUpdateTour_Activity"
-            android:theme="@style/Theme.TourenApp6.NoActionBar" />
+        <activity android:name=".view.home.HomeActivity" />
         <activity
             android:name=".view.splash.SplashActivity"
             android:theme="@style/Theme.TourenApp6.NoActionBar">
@@ -30,9 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".view.home.MainActivity"
-            android:label="@string/app_name" />
     </application>
 
 </manifest>

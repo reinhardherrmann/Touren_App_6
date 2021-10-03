@@ -34,7 +34,7 @@ class TourenHomeFragment : Fragment() {
         }
 
         mBinding.fabNewTour.setOnClickListener {
-            navControler.navigate(R.id.action_tourenHomeFragment_to_newTourFragment)
+            navControler.navigate(R.id.action_tourenHomeFragment_to_newTourActivity)
         }
 
         return view

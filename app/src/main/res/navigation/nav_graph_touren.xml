@@ -16,19 +16,17 @@
             app:popUpTo="@id/tourenHomeFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_tourenHomeFragment_to_newTourFragment"
-            app:destination="@id/newTourFragment"
-            app:popUpTo="@id/tourenHomeFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_tourenHomeFragment_to_newTourActivity"
+            app:destination="@id/newTourActivity" />
     </fragment>
     <fragment
         android:id="@+id/tourenDetailFragment"
         android:name="de.orome.tourenapp6.view.touren.TourenDetailFragment"
         android:label="fragment_touren_detail"
         tools:layout="@layout/fragment_touren_detail" />
-    <fragment
-        android:id="@+id/newTourFragment"
-        android:name="de.orome.tourenapp6.view.touren.NewTourFragment"
-        android:label="fragment_new_tour"
-        tools:layout="@layout/fragment_new_tour" />
+    <activity
+        android:id="@+id/newTourActivity"
+        android:name="de.orome.tourenapp6.NewTourActivity"
+        android:label="activity_new_tour"
+        tools:layout="@layout/activity_new_tour" />
 </navigation>

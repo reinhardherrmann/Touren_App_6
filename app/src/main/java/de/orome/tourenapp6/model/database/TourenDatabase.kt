@@ -26,7 +26,7 @@ public abstract class TourenDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                         context.applicationContext,
                         TourenDatabase::class.java,
-                        "word_database"
+                        "touren_database"
                 ).build()
                 INSTANCE = instance
                 // return instance

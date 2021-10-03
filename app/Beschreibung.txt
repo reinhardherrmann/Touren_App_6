@@ -14,6 +14,10 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
+Kap. 50.3   Floating Action Button zum Speichern hinzugefügt
+            Entity Tour angepaßt an erforderliche Felder
+            NewTourActivity eingeführt
+            Datenspeicherung getestet.
 ---------------------------------------------------------------------------------------
 Kap. 50.2   Dialoge zur Datums und Zeitwahl eingeführt
             Feld Fahrtzeit hinzugefügt
