@@ -79,13 +79,13 @@
                 android:layout_marginStart="8dp"
                 android:text="Status:"
                 android:textSize="@dimen/_15sdp"
-                app:layout_constraintEnd_toStartOf="@+id/tour_item_et_status"
+                app:layout_constraintEnd_toStartOf="@+id/tour_item_tv_status"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/tv_lbl_anz_stops"
                 app:layout_constraintTop_toTopOf="@+id/tv_lbl_anz_stops" />
 
             <TextView
-                android:id="@+id/tour_item_et_status"
+                android:id="@+id/tour_item_tv_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
