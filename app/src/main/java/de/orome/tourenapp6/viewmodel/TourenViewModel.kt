@@ -1,6 +1,5 @@
 package de.orome.tourenapp6.viewmodel
 
-import android.app.Application
 import androidx.lifecycle.*
 import de.orome.tourenapp6.application.TourenApplication
 import de.orome.tourenapp6.model.database.entities.Tour
@@ -24,6 +23,8 @@ class TourenViewModel(private val tourenRepository: TourenRepository, applicatio
         value = "This is all Touren Fragment"
     }
     val text: LiveData<String> = _text
+
+    val top10TourenList: LiveData<List<Tour>> = tourenRepository.getTop10TourenList.asLiveData()
 }
 
 class tourenViewModelFactory(private val repository: TourenRepository) : ViewModelProvider.Factory {

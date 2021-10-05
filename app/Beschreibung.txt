@@ -13,6 +13,10 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
+Kap. 51.0   Auslesen der Daten in der Datenbank in einem Fragment
+            Ergänzen des TourDao
+            Auflisten der Datensätze im Log
+            KEINE Views!
 ---------------------------------------------------------------------------------------
 Kap. 50.3   Floating Action Button zum Speichern hinzugefügt
             Entity Tour angepaßt an erforderliche Felder

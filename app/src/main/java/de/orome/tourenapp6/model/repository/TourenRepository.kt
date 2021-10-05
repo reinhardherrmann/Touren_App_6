@@ -3,6 +3,7 @@ package de.orome.tourenapp6.model.repository
 import androidx.annotation.WorkerThread
 import de.orome.tourenapp6.model.database.daos.TourDao
 import de.orome.tourenapp6.model.database.entities.Tour
+import kotlinx.coroutines.flow.Flow
 
 class TourenRepository(private val tourDao: TourDao) {
 
@@ -14,4 +15,6 @@ class TourenRepository(private val tourDao: TourDao) {
     suspend fun insertNewTour(tour: Tour) {
         tourDao.insertInitialTour(tour)
     }
+
+    val getTop10TourenList: Flow<List<Tour>> = tourDao.getTop10Touren()
 }
