@@ -23,9 +23,9 @@ class TourenListAdapter(private val fragment: Fragment): RecyclerView.Adapter<To
         val tour = touren[position]
         holder.tvTourNummer.text = tour.tourNummer
         holder.tvTourDatum.text = tour.tourDatum
-        holder.tvTourAnzStopps.text = "4"
+        holder.tvTourAnzStopps.text = tour.tourStopps.toString()
         // TODO Status muss im Model implementiert und dann ausgelesen werden
-        holder.tvTourStatus.text = "Rückfahrt"
+        holder.tvTourStatus.text = tour.tourStatus
     }
 
     override fun getItemCount(): Int {

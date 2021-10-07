@@ -26,7 +26,7 @@
         tools:layout="@layout/fragment_touren_detail" />
     <activity
         android:id="@+id/newTourActivity"
-        android:name="de.orome.tourenapp6.NewTourActivity"
+        android:name="de.orome.tourenapp6.view.touren.NewTourActivity"
         android:label="activity_new_tour"
         tools:layout="@layout/activity_new_tour" />
 </navigation>

@@ -11,7 +11,8 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 Kap. 51.3   TourenHomeFragment anpassen an Adapter
-            mit Erffolg getestet: Eingabe und Anzeige der Touren
+            mit Erfolg getestet: Eingabe und Anzeige der Touren
+            Anpassung Touren und Adapter mit AnzStopps und TourStatus
 ---------------------------------------------------------------------------------------
 Kap 51.2    Adapter für TourenListe RecyclerView erstellt
 ---------------------------------------------------------------------------------------

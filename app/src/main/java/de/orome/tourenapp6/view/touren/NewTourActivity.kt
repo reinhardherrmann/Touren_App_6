@@ -1,8 +1,7 @@
-package de.orome.tourenapp6
+package de.orome.tourenapp6.view.touren
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -11,11 +10,11 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
+import de.orome.tourenapp6.R
 import de.orome.tourenapp6.application.TourenApplication
 import de.orome.tourenapp6.databinding.ActivityNewTourBinding
 import de.orome.tourenapp6.helper.Helper
 import de.orome.tourenapp6.model.database.entities.Tour
-import de.orome.tourenapp6.view.touren.TourenActivity
 import de.orome.tourenapp6.viewmodel.TourenViewModel
 import de.orome.tourenapp6.viewmodel.tourenViewModelFactory
 import java.util.*
@@ -268,7 +267,9 @@ class NewTourActivity : AppCompatActivity(), View.OnClickListener {
                             "",
                             "",
                             0,
-                            0
+                            0,
+                            3,
+                            "auf Rückfahrt"
                         )
                         tourenViewModel.insertTour(tour)
                         //Toast.makeText(this,"Tour ${tour.tourNummer} gespeichert").show()

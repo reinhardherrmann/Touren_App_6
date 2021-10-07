@@ -27,6 +27,8 @@ data class Tour(
     @ColumnInfo(name = "tour_startzeit") val tourStartZeit: String,
     @ColumnInfo(name = "tour_endezeit") val tourEndeZeit: String,
     @ColumnInfo(name = "tour_start_km") val tourStartKm: Int,
-    @ColumnInfo(name = "tour_ende_km") val tourEndeKm: Int
+    @ColumnInfo(name = "tour_ende_km") val tourEndeKm: Int,
+    @ColumnInfo(name = "tour_stopps") val tourStopps: Int,
+    @ColumnInfo(name = "tour_status") val tourStatus: String
 
 )
