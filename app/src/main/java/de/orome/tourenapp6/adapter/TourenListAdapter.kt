@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import de.orome.tourenapp6.databinding.ItemTourenListeBinding
 import de.orome.tourenapp6.model.database.entities.Tour
+import de.orome.tourenapp6.view.touren.TourenHomeFragment
 
 class TourenListAdapter(private val fragment: Fragment): RecyclerView.Adapter<TourenListAdapter.ViewHolder>() {
 
@@ -26,6 +27,13 @@ class TourenListAdapter(private val fragment: Fragment): RecyclerView.Adapter<To
         holder.tvTourAnzStopps.text = tour.tourStopps.toString()
         // TODO Status muss im Model implementiert und dann ausgelesen werden
         holder.tvTourStatus.text = tour.tourStatus
+
+        // ClickListener für jedes Item der TourenListe
+        holder.itemView.setOnClickListener {
+            if(fragment is TourenHomeFragment){
+                fragment.gotoTourenDetails()
+            }
+        }
     }
 
     override fun getItemCount(): Int {

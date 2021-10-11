@@ -9,7 +9,11 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
-Kap. 62V25  Navigate from Tourenlist to Tourendetailfragment
+Kap.62 V25  Navigate from Tourenlist to Tourendetailfragment
+            Safe args in build.gradle eingefügt
+            fun gotoTourenDetails in Touren home Fragment erstellt
+            Onclicklistener im Adater für itemView eingerichtet
+            Navigation funktioniert ohne Übergabe von Werten
 ---------------------------------------------------------------------------------------
 Kap. 51.3   TourenHomeFragment anpassen an Adapter
             mit Erfolg getestet: Eingabe und Anzeige der Touren

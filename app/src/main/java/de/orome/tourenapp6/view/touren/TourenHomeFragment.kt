@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.viewModels
+import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -23,6 +24,8 @@ import de.orome.tourenapp6.viewmodel.tourenViewModelFactory
 class TourenHomeFragment : Fragment() {
 
     private lateinit var mBinding: FragmentTourenHomeBinding
+    private lateinit var navController: NavController
+
     private val mtourenViewModel: TourenViewModel by viewModels{
         tourenViewModelFactory((requireActivity().application as TourenApplication).repository)
     }
@@ -37,14 +40,14 @@ class TourenHomeFragment : Fragment() {
         mBinding = FragmentTourenHomeBinding.inflate(layoutInflater, container, false)
 
 
-        val navControler = findNavController(this)
+        navController = findNavController(this)
 
         mBinding.btnTourDetails.setOnClickListener {
-            navControler.navigate(R.id.action_tourenHomeFragment_to_tourenDetailFragment)
+            navController.navigate(R.id.action_tourenHomeFragment_to_tourenDetailFragment)
         }
 
         mBinding.fabNewTour.setOnClickListener {
-            navControler.navigate(R.id.action_tourenHomeFragment_to_newTourActivity)
+            navController.navigate(R.id.action_tourenHomeFragment_to_newTourActivity)
         }
 
         return mBinding.root
@@ -77,5 +80,9 @@ class TourenHomeFragment : Fragment() {
                 }
             }
         }
+    }
+
+    fun gotoTourenDetails(){
+        navController.navigate(TourenHomeFragmentDirections.actionTourenHomeFragmentToTourenDetailFragment())
     }
 }
