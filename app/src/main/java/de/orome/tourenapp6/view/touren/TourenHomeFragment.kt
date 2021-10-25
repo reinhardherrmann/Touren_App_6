@@ -17,6 +17,7 @@ import de.orome.tourenapp6.R
 import de.orome.tourenapp6.adapter.TourenListAdapter
 import de.orome.tourenapp6.application.TourenApplication
 import de.orome.tourenapp6.databinding.FragmentTourenHomeBinding
+import de.orome.tourenapp6.model.database.entities.Tour
 import de.orome.tourenapp6.viewmodel.TourenViewModel
 import de.orome.tourenapp6.viewmodel.tourenViewModelFactory
 
@@ -82,7 +83,7 @@ class TourenHomeFragment : Fragment() {
         }
     }
 
-    fun gotoTourenDetails(){
-        navController.navigate(TourenHomeFragmentDirections.actionTourenHomeFragmentToTourenDetailFragment())
+    fun gotoTourenDetails(tour: Tour){
+        navController.navigate(TourenHomeFragmentDirections.actionTourenHomeFragmentToTourenDetailFragment(tour))
     }
 }

@@ -31,7 +31,7 @@ class TourenListAdapter(private val fragment: Fragment): RecyclerView.Adapter<To
         // ClickListener für jedes Item der TourenListe
         holder.itemView.setOnClickListener {
             if(fragment is TourenHomeFragment){
-                fragment.gotoTourenDetails()
+                fragment.gotoTourenDetails(tour)
             }
         }
     }

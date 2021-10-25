@@ -23,7 +23,12 @@
         android:id="@+id/tourenDetailFragment"
         android:name="de.orome.tourenapp6.view.touren.TourenDetailFragment"
         android:label="fragment_touren_detail"
-        tools:layout="@layout/fragment_touren_detail" />
+        tools:layout="@layout/fragment_touren_detail">
+        <argument
+            android:name="tourenDetails"
+            app:argType="de.orome.tourenapp6.model.database.entities.Tour"
+            />
+    </fragment>
     <activity
         android:id="@+id/newTourActivity"
         android:name="de.orome.tourenapp6.view.touren.NewTourActivity"

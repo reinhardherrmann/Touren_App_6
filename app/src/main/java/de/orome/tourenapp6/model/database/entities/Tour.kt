@@ -1,11 +1,14 @@
 package de.orome.tourenapp6.model.database.entities
 
+import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 
 @Entity(tableName = "tbl_touren")
+@Parcelize
 data class Tour(
     @PrimaryKey(autoGenerate = true)
     val tour_id: Int,
@@ -31,4 +34,4 @@ data class Tour(
     @ColumnInfo(name = "tour_stopps") val tourStopps: Int,
     @ColumnInfo(name = "tour_status") val tourStatus: String
 
-)
+): Parcelable

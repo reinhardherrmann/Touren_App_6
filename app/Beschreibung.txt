@@ -8,6 +8,10 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
+Kap64. V27  Pass the data via arguments to another fragment
+            'parcelize' eingeführt
+            Tour.kt als parcelable zurückgeben mit Annotation @Parcelize
+            Argument im Nav-Graph anpassen
 ---------------------------------------------------------------------------------------
 Kap.62 V25  Navigate from Tourenlist to Tourendetailfragment
             Safe args in build.gradle eingefügt
