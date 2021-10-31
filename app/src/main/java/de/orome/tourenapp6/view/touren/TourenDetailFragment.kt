@@ -39,7 +39,7 @@ class TourenDetailFragment : Fragment() {
         // Inflate the layout for this fragment
         mBinding = FragmentTourenDetailBinding.inflate(layoutInflater)
 
-
+    val dummy=0
         initViewPager2()
         return mBinding.root
     }
