@@ -6,6 +6,11 @@
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
+Kap. 64 V29 TabLayout mit ViewPager2 für TourenDetails
+            noch ohne ViewModel
+            TourenDetailViewPagerViewAdapter erstellt
+            Namensliste und Liste der Fragments im Adapter festgelegt
+            Fragments werden angezeigt noch ohne Daten
 ---------------------------------------------------------------------------------------
 Kap 64 V28  Bezirke von Berlin eingefügt
 ---------------------------------------------------------------------------------------

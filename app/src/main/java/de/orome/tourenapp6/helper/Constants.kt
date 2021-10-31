@@ -1,5 +1,10 @@
 package de.orome.tourenapp6.helper
 
+import androidx.fragment.app.Fragment
+import de.orome.tourenapp6.view.touren.TourenDetailPrimaryDataFragment
+import de.orome.tourenapp6.view.touren.TourenDetailStartStopFragment
+import de.orome.tourenapp6.view.touren.TourenDetailStoppsListFragment
+
 /**
  * This is used to define the constant values that we can use throughout the application.
  */
@@ -20,6 +25,29 @@ object Constants {
         list.add("Volvo")
         list.add("Iveco")
         list.add("DAF")
+        return list
+    }
+
+    fun gettourDetailTabNames(): ArrayList<String>{
+        // TODO: Namen in StringsDatei überführen
+        val list = ArrayList<String>()
+        list.add("Übersicht")
+        list.add("Stopp\nListe")
+        list.add("Einzel\nStopp")
+        //list.add("Fahrzeug")
+//        list.add("Beginn/Ende")
+//        list.add("Entsorgung")
+//        list.add("Störzeit")
+//        list.add("Tankstopp")
+        return list
+    }
+
+    fun getTourDetailsFragmentList(): ArrayList<Fragment>{
+        val list = ArrayList<Fragment>()
+        list.add(TourenDetailPrimaryDataFragment())
+        list.add(TourenDetailStoppsListFragment())
+        list.add(TourenDetailStartStopFragment())
+
         return list
     }
 

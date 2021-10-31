@@ -6,17 +6,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import de.orome.tourenapp6.R
+import de.orome.tourenapp6.databinding.FragmentTourenDetailBinding
+import de.orome.tourenapp6.databinding.FragmentTourenDetailStoppsListBinding
 
 class TourenDetailStoppsListFragment: Fragment() {
 
-    private lateinit var rootView: View
+    private lateinit var mBinding: FragmentTourenDetailStoppsListBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        rootView = inflater.inflate(R.layout.fragment_touren_detail_stopps_list,container,false)
-        return super.onCreateView(inflater, container, savedInstanceState)
+        mBinding = FragmentTourenDetailStoppsListBinding.inflate(layoutInflater)
+
+        return mBinding.root
     }
 }
