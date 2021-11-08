@@ -1,9 +1,6 @@
 package de.orome.tourenapp6.helper
 
 import androidx.fragment.app.Fragment
-import de.orome.tourenapp6.view.touren.TourenDetailPrimaryDataFragment
-import de.orome.tourenapp6.view.touren.TourenDetailStartStopFragment
-import de.orome.tourenapp6.view.touren.TourenDetailStoppsListFragment
 
 /**
  * This is used to define the constant values that we can use throughout the application.
@@ -42,14 +39,14 @@ object Constants {
         return list
     }
 
-    fun getTourDetailsFragmentList(): ArrayList<Fragment>{
-        val list = ArrayList<Fragment>()
-        list.add(TourenDetailPrimaryDataFragment())
-        list.add(TourenDetailStoppsListFragment())
-        list.add(TourenDetailStartStopFragment())
-
-        return list
-    }
+//    fun getTourDetailsFragmentList(): ArrayList<Fragment>{
+//        val list = ArrayList<Fragment>()
+//        list.add(TourenDetailPrimaryDataFragment())
+//        list.add(TourenDetailStoppsListFragment())
+//        list.add(TourenDetailStartStopFragment())
+//
+//        return list
+//    }
 
     fun bezirkeBerlin(): ArrayList<String> {
         var list = ArrayList<String>()

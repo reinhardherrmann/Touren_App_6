@@ -11,24 +11,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import de.orome.tourenapp6.R
-import de.orome.tourenapp6.adapter.TourenDetailViewPagerStateAdapter
 import de.orome.tourenapp6.databinding.FragmentTourenDetailBinding
 import de.orome.tourenapp6.helper.Constants
-import de.orome.tourenapp6.viewmodel.TourenViewModel
 
 
 class TourenDetailFragment : Fragment() {
 
     private lateinit var mBinding: FragmentTourenDetailBinding
-    private lateinit var viewPager: ViewPager2
-    private lateinit var tabLayout: TabLayout
-    private lateinit var adapter: TourenDetailViewPagerStateAdapter
+
+
 
 
 
@@ -40,7 +35,7 @@ class TourenDetailFragment : Fragment() {
         mBinding = FragmentTourenDetailBinding.inflate(layoutInflater)
 
     val dummy=0
-        initViewPager2()
+//        initViewPager2()
         return mBinding.root
     }
 
@@ -48,19 +43,28 @@ class TourenDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val args : TourenDetailFragmentArgs by navArgs()
         Log.e("Tourennummer:","${args.tourenDetails.tourNummer}")
+        val lblTDetail = "Tour ${args.tourenDetails.tourNummer} \nDetailansicht"
+        mBinding.tvTourenDetail.text = lblTDetail
+        mBinding.tvTourenDetailTourDatum.setText(args.tourenDetails.tourDatum)
+        mBinding.tvTourenDetailTourDauer.setText(args.tourenDetails.tourDauer)
+        mBinding.tvTourenDetailTourStartZeit.setText(args.tourenDetails.tourStartZeit)
+
+        mBinding.btnSaveTourPrimaryData.setOnClickListener {
+            //if (mBinding.ivTDetailEditGeneralData)
+
+
+        }
     }
 
-    private fun initViewPager2(){
-        viewPager = mBinding.tourenDetailViewpager2
-        adapter = TourenDetailViewPagerStateAdapter(parentFragmentManager,lifecycle)
-        viewPager.adapter = adapter
-
-        // TabLayout
-        tabLayout = mBinding.tourenDetailTabLayout
-        val tabNames = Constants.gettourDetailTabNames()
-        TabLayoutMediator(tabLayout,viewPager){tab, pos ->
-            tab.text = tabNames[pos]
-        }.attach()
-    }
+//    private fun initViewPager2(){
+//
+//
+//        // TabLayout
+//
+//        val tabNames = Constants.gettourDetailTabNames()
+//        TabLayoutMediator(tabLayout,viewPager){tab, pos ->
+//            tab.text = tabNames[pos]
+//        }.attach()
+//    }
 
 }

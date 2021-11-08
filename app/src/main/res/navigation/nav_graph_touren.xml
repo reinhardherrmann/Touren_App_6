@@ -28,10 +28,20 @@
             android:name="tourenDetails"
             app:argType="de.orome.tourenapp6.model.database.entities.Tour"
             />
+        <action
+            android:id="@+id/action_tourenDetailFragment_to_tourenDetailPrimaryDataFragment"
+            app:destination="@id/tourenDetailPrimaryDataFragment" />
     </fragment>
     <activity
         android:id="@+id/newTourActivity"
         android:name="de.orome.tourenapp6.view.touren.NewTourActivity"
         android:label="activity_new_tour"
         tools:layout="@layout/activity_new_tour" />
+    <fragment
+        android:id="@+id/tourenDetailPrimaryDataFragment"
+        android:name="de.orome.tourenapp6.view.touren.TourenDetailPrimaryDataFragment"
+        android:label="TourenDetailPrimaryDataFragment" >
+        <argument android:name="tourenDetails"
+            app:argType="de.orome.tourenapp6.model.database.entities.Tour"/>
+    </fragment>
 </navigation>
