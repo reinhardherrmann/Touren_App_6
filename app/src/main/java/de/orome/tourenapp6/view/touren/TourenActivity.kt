@@ -8,6 +8,7 @@ import de.orome.tourenapp6.R
 import de.orome.tourenapp6.viewmodel.TourenViewModel
 
 class TourenActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         SqlScoutServer.create(this, getPackageName())

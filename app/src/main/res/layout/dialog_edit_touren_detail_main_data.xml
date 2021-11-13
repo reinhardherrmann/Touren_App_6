@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp">
+
+    <TextView
+        android:id="@+id/lbl_dialog_edit_touren_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tourdaten ändern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_edit_touren_detail_tour_nummer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3">
+
+        <EditText
+            android:id="@+id/et_dialog_edit_touren_detail_tour_nummer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TourNummer"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_edit_touren_detail_tour_datum"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialog_edit_touren_detail_tour_nummer">
+
+        <EditText
+            android:id="@+id/et_dialog_edit_touren_detail_tour_datum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tourdatum tt.mm.JJJJ"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_edit_touren_detail_tour_dauer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialog_edit_touren_detail_tour_datum">
+
+        <EditText
+            android:id="@+id/et_dialog_edit_touren_detail_tour_dauer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tourdauer hh:mm"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_edit_touren_detail_tour_startzeit"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialog_edit_touren_detail_tour_dauer">
+
+        <EditText
+            android:id="@+id/et_dialog_edit_touren_detail_tour_startzeit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Startzeit hh:mm"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dialog_edit_touren_detail_tour_endezeit"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialog_edit_touren_detail_tour_startzeit">
+
+        <EditText
+            android:id="@+id/et_dialog_edit_touren_detail_tour_endezeit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endezeit hh:mm"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_dialog_edit_touren_detail" />
+
+    <Button
+        android:id="@+id/btn_dialog_edit_touren_detail_main_data_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Speichern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialog_edit_touren_detail_tour_endezeit" />
+
+    <Button
+        android:id="@+id/btn_dialog_edit_touren_detail_main_data_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Abbrechen"
+        app:layout_constraintEnd_toStartOf="@+id/btn_dialog_edit_touren_detail_main_data_save"
+        app:layout_constraintTop_toTopOf="@+id/btn_dialog_edit_touren_detail_main_data_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

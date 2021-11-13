@@ -20,6 +20,18 @@ class TourenDetailRepository(application: Application) {
     }
 
     // Methoden zur Bearbeitung der Tourdaten
+    suspend fun updateTour(tour: Tour){
+        withContext(Dispatchers.IO){
+            tourDao.updateTour(tour)
+        }
+    }
 
+    suspend fun getTourByNumber(tourNummer: String): Tour?{
+        var tour: Tour? = null
+        withContext(Dispatchers.IO){
+            tour = tourDao.getTourByNumber(tourNummer)
+        }
+        return tour
+    }
 
 }

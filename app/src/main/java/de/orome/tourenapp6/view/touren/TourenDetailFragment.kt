@@ -11,17 +11,25 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.navArgs
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import de.orome.tourenapp6.databinding.FragmentTourenDetailBinding
 import de.orome.tourenapp6.helper.Constants
+import de.orome.tourenapp6.model.database.entities.Tour
+import de.orome.tourenapp6.view.touren.dialogs.DialogEditTourenDetailMainData
+import de.orome.tourenapp6.viewmodel.TourenDetailViewModel
+import de.orome.tourenapp6.viewmodel.TourenDetailViewModelFactory
 
 
 class TourenDetailFragment : Fragment() {
 
     private lateinit var mBinding: FragmentTourenDetailBinding
+//    private lateinit var viewModel: TourenDetailViewModel
+//    private var tour: Tour? = null
 
 
 
@@ -34,37 +42,36 @@ class TourenDetailFragment : Fragment() {
         // Inflate the layout for this fragment
         mBinding = FragmentTourenDetailBinding.inflate(layoutInflater)
 
-    val dummy=0
-//        initViewPager2()
         return mBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val args : TourenDetailFragmentArgs by navArgs()
+        var tour: Tour = args.tourenDetails
         Log.e("Tourennummer:","${args.tourenDetails.tourNummer}")
-        val lblTDetail = "Tour ${args.tourenDetails.tourNummer} \nDetailansicht"
-        mBinding.tvTourenDetail.text = lblTDetail
-        mBinding.tvTourenDetailTourDatum.setText(args.tourenDetails.tourDatum)
-        mBinding.tvTourenDetailTourDauer.setText(args.tourenDetails.tourDauer)
-        mBinding.tvTourenDetailTourStartZeit.setText(args.tourenDetails.tourStartZeit)
+        val tourNummer = args.tourenDetails.tourNummer
+        val lblTDetail = "Tour $tourNummer \nDetailansicht"
+
+        fillFieldValues(args)
 
         mBinding.btnSaveTourPrimaryData.setOnClickListener {
             //if (mBinding.ivTDetailEditGeneralData)
+            val dialog =  DialogEditTourenDetailMainData(tour)
+            dialog.show(parentFragmentManager,"Tour ändern")
 
-
+            // TODO hier neue Tourdaten laden
+            fillFieldValues(args)
         }
     }
 
-//    private fun initViewPager2(){
-//
-//
-//        // TabLayout
-//
-//        val tabNames = Constants.gettourDetailTabNames()
-//        TabLayoutMediator(tabLayout,viewPager){tab, pos ->
-//            tab.text = tabNames[pos]
-//        }.attach()
-//    }
+    fun fillFieldValues( args: TourenDetailFragmentArgs) {
+        mBinding.tvTourenDetail.text = "Tour ${args.tourenDetails.tourNummer} \nDetailansicht"
+        mBinding.tvTourenDetailTourDatum.setText(args.tourenDetails.tourDatum)
+        mBinding.tvTourenDetailTourDauer.setText(args.tourenDetails.tourDauer)
+        mBinding.tvTourenDetailTourStartZeit.setText(args.tourenDetails.tourStartZeit)
+        mBinding.tvTourenDetailTourEndeZeit.setText(args.tourenDetails.tourEndeZeit)
+    }
+
 
 }

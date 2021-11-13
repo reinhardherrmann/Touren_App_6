@@ -15,14 +15,30 @@ import kotlinx.coroutines.launch
  */
 
 
-class TourenDetailViewModel(application: Application, tourNummer: String): AndroidViewModel(application) {
+class TourenDetailViewModel(application: Application): AndroidViewModel(application) {
 
     private var context = application
     private var helper = Helper()
     private var tourenDetailRepository = TourenDetailRepository(application)
 
 
+    ///////////////////////////////////////////////////////////////////
+    // Funktionen, um auf Tourdaten zuzgreifen
+    fun updateTour(tour: Tour){
+        viewModelScope.launch {
+            tourenDetailRepository.updateTour(tour)
+        }
+    }
+
+    fun getTourByNumber(tourNummer: String): Tour?{
+        var tour: Tour? = null
+        viewModelScope.launch {
+            tour = tourenDetailRepository.getTourByNumber(tourNummer)
+        }
+        return tour
+    }
 
 
+    ///////////////////////////////////////////////////////////////////
 
 }
