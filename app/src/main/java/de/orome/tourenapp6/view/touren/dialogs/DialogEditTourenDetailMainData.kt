@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
 import de.orome.tourenapp6.R
@@ -90,6 +91,7 @@ class DialogEditTourenDetailMainData(var tour: Tour? = null): DialogFragment() {
         tour?.tourNummer.let {
             viewModel.updateTour(tour)
         }
+        Toast.makeText(requireContext(),"Tour ${tour.tourNummer} gespeichert", Toast.LENGTH_SHORT).show()
         dismiss()
     }
 
