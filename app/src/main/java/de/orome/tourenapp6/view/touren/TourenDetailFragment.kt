@@ -28,7 +28,7 @@ import de.orome.tourenapp6.viewmodel.TourenDetailViewModelFactory
 class TourenDetailFragment : Fragment() {
 
     private lateinit var mBinding: FragmentTourenDetailBinding
-//    private lateinit var viewModel: TourenDetailViewModel
+    private lateinit var viewModel: TourenDetailViewModel
 //    private var tour: Tour? = null
 
 
@@ -49,7 +49,10 @@ class TourenDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val args : TourenDetailFragmentArgs by navArgs()
         var tour: Tour = args.tourenDetails
-        Log.e("Tourennummer:","${args.tourenDetails.tourNummer}")
+
+        viewModel = ViewModelProvider(requireActivity(),TourenDetailViewModelFactory(requireActivity().application)).get(TourenDetailViewModel::class.java)
+
+//        Log.e("Tourennummer:","${args.tourenDetails.tourNummer}")
         val tourNummer = args.tourenDetails.tourNummer
         val lblTDetail = "Tour $tourNummer \nDetailansicht"
 
