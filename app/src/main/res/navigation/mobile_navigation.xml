@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="de.orome.tourenapp6.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="de.orome.tourenapp6.view.touren.AllTourenFragment"
+        android:label="@string/labelAllTourenFragment"
+        tools:layout="@layout/fragment_all_touren" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="de.orome.tourenapp6.ui.dashboard.DashboardFragment"
+        android:name="de.orome.tourenapp6.view.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="de.orome.tourenapp6.ui.notifications.NotificationsFragment"
+        android:name="de.orome.tourenapp6.view.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

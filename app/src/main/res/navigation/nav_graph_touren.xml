@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_touren"
+    app:startDestination="@id/tourenHomeFragment">
+
+    <fragment
+        android:id="@+id/tourenHomeFragment"
+        android:name="de.orome.tourenapp6.view.touren.TourenHomeFragment"
+        android:label="fragment_touren_home"
+        tools:layout="@layout/fragment_touren_home" >
+        <action
+            android:id="@+id/action_tourenHomeFragment_to_tourenDetailFragment"
+            app:destination="@id/tourenDetailFragment"
+            app:popUpTo="@id/tourenHomeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tourenHomeFragment_to_newTourActivity"
+            app:destination="@id/newTourActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourenDetailFragment"
+        android:name="de.orome.tourenapp6.view.touren.TourenDetailFragment"
+        android:label="fragment_touren_detail"
+        tools:layout="@layout/fragment_touren_detail">
+        <argument
+            android:name="tourenDetails"
+            app:argType="de.orome.tourenapp6.model.database.entities.Tour"
+            />
+        <action
+            android:id="@+id/action_tourenDetailFragment_to_tourenDetailPrimaryDataFragment"
+            app:destination="@id/tourenDetailPrimaryDataFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/newTourActivity"
+        android:name="de.orome.tourenapp6.view.touren.NewTourActivity"
+        android:label="activity_new_tour"
+        tools:layout="@layout/activity_new_tour" />
+    <fragment
+        android:id="@+id/tourenDetailPrimaryDataFragment"
+        android:name="de.orome.tourenapp6.view.touren.TourenDetailPrimaryDataFragment"
+        android:label="TourenDetailPrimaryDataFragment" >
+        <argument android:name="tourenDetails"
+            app:argType="de.orome.tourenapp6.model.database.entities.Tour"/>
+    </fragment>
+</navigation>

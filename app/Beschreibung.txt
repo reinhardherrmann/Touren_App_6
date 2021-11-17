@@ -1,0 +1,131 @@
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Kap. 64 V30 Dialoge_zum_Ändern_der_Daten
+---------------------------------------------------------------------------------------
+Kap. 64 V29 TabLayout mit ViewPager2 für TourenDetails
+            noch ohne ViewModel
+            TourenDetailViewPagerViewAdapter erstellt
+            Namensliste und Liste der Fragments im Adapter festgelegt
+            Fragments werden angezeigt noch ohne Daten
+---------------------------------------------------------------------------------------
+Kap 64 V28  Bezirke von Berlin eingefügt
+---------------------------------------------------------------------------------------
+Kap64. V27  Pass the data via arguments to another fragment
+            'parcelize' eingeführt
+            Tour.kt als parcelable zurückgeben mit Annotation @Parcelize
+            Argument im Nav-Graph anpassen
+            Fragments für Tourendetails eingefügt
+---------------------------------------------------------------------------------------
+Kap.62 V25  Navigate from Tourenlist to Tourendetailfragment
+            Safe args in build.gradle eingefügt
+            fun gotoTourenDetails in Touren home Fragment erstellt
+            Onclicklistener im Adater für itemView eingerichtet
+            Navigation funktioniert ohne Übergabe von Werten
+---------------------------------------------------------------------------------------
+Kap. 51.3   TourenHomeFragment anpassen an Adapter
+            mit Erfolg getestet: Eingabe und Anzeige der Touren
+            Anpassung Touren und Adapter mit AnzStopps und TourStatus
+---------------------------------------------------------------------------------------
+Kap 51.2    Adapter für TourenListe RecyclerView erstellt
+---------------------------------------------------------------------------------------
+Kap 51.1    RecyclerView im fragment_touren_home
+            Layout für die Items der RecyclerView
+---------------------------------------------------------------------------------------
+Kap. 51.0   Auslesen der Daten in der Datenbank in einem Fragment
+            Ergänzen des TourDao
+            Auflisten der Datensätze im Log
+            KEINE Views!
+---------------------------------------------------------------------------------------
+Kap. 50.3   Floating Action Button zum Speichern hinzugefügt
+            Entity Tour angepaßt an erforderliche Felder
+            NewTourActivity eingeführt
+            Datenspeicherung getestet.
+---------------------------------------------------------------------------------------
+Kap. 50.2   Dialoge zur Datums und Zeitwahl eingeführt
+            Feld Fahrtzeit hinzugefügt
+            Tour.kt um Fahrtzeit ergänzt
+---------------------------------------------------------------------------------------
+Kap. 50.2   TourenFragments mit ViewBinding ausgerüstet
+            fragment new tour gestaltet
+---------------------------------------------------------------------------------------
+Kap. 50.1   Touren Navigation aufbauen
+            3 fragments stand 29.09.2021:
+            TourenHomeFragment, TourenDetailFragment und NewTourFragment
+            NavGraph nav graph touren erstellt
+---------------------------------------------------------------------------------------
+Kap. 50.0   Neustrukturierung der GUI
+            alle Fragments und Activities gelöscht bis auf HomeActivity und
+            SplashActivity
+
+            Neu erstellt: HomeActivity und TourenActivity
+---------------------------------------------------------------------------------------
+Kap. 45.6   Setting up Application Class
+            TourenApplication erstellt
+            AndroidManifest angepaßt
+---------------------------------------------------------------------------------------
+Kap. 45.5   Setting up ViewModel and ViewModelFactory
+---------------------------------------------------------------------------------------
+Kap. 45.4   ROOM TourenRepository erstellt
+---------------------------------------------------------------------------------------
+Kap. 45.3   ROOM TourenDatabase erstellt Momentan nur mit TourDao und Tour Entity
+---------------------------------------------------------------------------------------
+Kap. 45.2   ROOM TourDao erstellt mit einer suspend function zum Insert der Daten
+---------------------------------------------------------------------------------------
+Kap. 45.1   ROOM create Entity Tour
+            vorläufiger Stand des Entityobjektes,
+            kann noch ergänzt werden
+---------------------------------------------------------------------------------------
+Kap. 29.3   Designing AddUpdateTourActivity part 3
+            FloatingActionButton erhält OnClickListener mit Toast (vorläufig)
+            Copyright in SplashActivty eingefügt
+
+            DatePickerDialog für Tourdatum
+            TimePickerDialog für TourDauer, Depotzeit vor und nach Tour
+---------------------------------------------------------------------------------------
+Kap. 29.2   Designing AddUpdateTourActivity part 2
+---------------------------------------------------------------------------------------
+Kap. 29.1   Designing AddUpdateTourActivity part 1
+            Layout erstellt Theme zugeordnet,
+            Label und mehrere TextInputLayout hinzugefügt
+            Felder sind noch nicht vollständig
+---------------------------------------------------------------------------------------
+Kap. 22.2   Package view.touren sowie
+            AddUpdateTourActivity hinzugefügt
+            Manifest angepaßt NoActionBar und label für Activity
+            HomeViewModel und HomeFragment umbenannt in TourenViewModel und
+            AllTourenFragment
+---------------------------------------------------------------------------------------
+Kap. 22.1    Package Struktur anpassen an MVVM
+---------------------------------------------------------------------------------------
+Step 1.3    AppIcon erstellen
+---------------------------------------------------------------------------------------
+Step 1.2    Erstellen einer Animation für SplashScreen
+            Splashscreen soll Fullscreen werden
+            NoActionBar-Theme hinzugefügt und in Manifest zur SplashActivity zugefügt
+            Animation erstellt definitionen mit translate (Bewegung) und alpha (Sichtbarwerden)
+            animationListener eingeführt. Dieser ruft neue Activity auf
+---------------------------------------------------------------------------------------
+Step 1.1    Einführen Splash-Activity mit Bild und Text
+            SplashActivity als Startactivity im Manifest angegeben
+            neuen Font zum Projekt hinzugefügt
+---------------------------------------------------------------------------------------
+Step 1: Anpassen der build.gradle files
+        ViewBinding eingerichtet und Bibliothek für bessere Dimensionierung sdp
+---------------------------------------------------------------------------------------
+Step 0: Anlegen Projekt ohne Änderungen
+        Quelle: https://www.udemy.com/course/android-jetpack-masterclass/
+
+
+
+
